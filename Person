@@ -1,0 +1,16 @@
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name}."
+
+
+class Employee(Person):
+    def __init__(self, name, age, employee_id):
+        super().__init__(name, age)
+        self.employee_id = employee_id
+
+    def greet(self):
+        return f"Hello, my name is {self.name} and my employee ID is {self.employee_id}."
